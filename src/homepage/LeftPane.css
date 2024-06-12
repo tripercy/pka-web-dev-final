@@ -1,0 +1,73 @@
+.left-panel {
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-right: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.left-panel h3 {
+    margin-top: 0;
+    font-size: 20px;
+
+}
+
+.header-with-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-repo-button{
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+.new-repo-button:hover{
+    background-color: orange;
+}
+.repo-search input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.top-repos {
+    text-align: left;
+}
+
+.recent-activities {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-repos ul, .recent-activities ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.top-repos li a, .recent-activities li a{
+    margin: 10px 0;
+}
+
+.top-repos li a, .recent-activities li a{
+    text-decoration: none;
+    font-size: small;
+}
+
+.top-repos li a:hover, .recent-activities li a:hover {
+    text-decoration: underline;
+}
