@@ -1,0 +1,50 @@
+.top-nav {
+    background-color: black;
+    padding: 13px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+.btn-left-nav {
+    background-color: black;
+    border: none;
+}
+
+.btn-left-nav-icon {
+    background-color: black;
+    border: 0.3px solid ;
+    color: #8D96A0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-left-nav img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-home img {
+    width: 30px;
+    height: 30px;
+}
+
+.current-loc {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.current-loc a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+.left-part {
+    display: flex;
+    gap: 9px;
+}
