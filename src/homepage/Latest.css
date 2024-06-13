@@ -56,6 +56,9 @@
     color: white;
 }
 
+.latest-changes ul li a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -101,5 +104,4 @@
     margin-top: 10px;
     text-decoration: none;
     color: #0366d6;
-    margin-left: -70%;
 }
