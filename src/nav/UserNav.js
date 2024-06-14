@@ -1,4 +1,4 @@
-
+import './UserNav.css'
 
 export default function UserNav() {
     return (

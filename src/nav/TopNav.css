@@ -66,11 +66,15 @@
     color: white;
     border: none;
     min-width: 30ch;
-    border-right: 1px solid #30363db3;
+    border-right: var(--border-thin);
+}
+
+.search-box:focus {
+    outline: none;
 }
 
 .icon {
-    color: #8D96A0;
+    color: var(--color-text-secondary);
     margin: 5px;
 }
 
@@ -83,13 +87,13 @@
 
 .right-part button {
     background-color: black;
-    border: 0.5px solid #30363db3;
+    border: var(--border-thin);
     border-radius: 5px;
     padding: 2px;
 }
 
 .top-nav-buttons {
-    border-left: 0.5px solid #30363db3;
+    border-left: var(--border-thin);
     padding-left: 5px;
     display: flex;
     gap: 5px;

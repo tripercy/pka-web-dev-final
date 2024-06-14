@@ -1,3 +1,4 @@
+import './global.css'
 import './App.css';
 import LeftPane from './homepage/LeftPane';
 import TopNav from './nav/TopNav';
