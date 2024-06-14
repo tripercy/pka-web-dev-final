@@ -2,7 +2,7 @@
     background-color: black;
     padding: 13px;
     padding-left: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #30363db3;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@
 
 .search-bar {
     border-radius: 5px;
-    border: 1px solid #8D96A0;
+    border: 1px solid #30363db3;
     padding: 2px;
     display: flex;
     flex-direction: row;
@@ -66,7 +66,7 @@
     color: white;
     border: none;
     min-width: 30ch;
-    border-right: 1px solid #8D96A0;
+    border-right: 1px solid #30363db3;
 }
 
 .icon {
@@ -83,13 +83,13 @@
 
 .right-part button {
     background-color: black;
-    border: 0.5px solid #8D96A0;
+    border: 0.5px solid #30363db3;
     border-radius: 5px;
     padding: 2px;
 }
 
 .top-nav-buttons {
-    border-left: 0.5px solid #8D96A0;
+    border-left: 0.5px solid #30363db3;
     padding-left: 5px;
     display: flex;
     gap: 5px;
