@@ -1,0 +1,41 @@
+.user-nav {
+    background-color: var(--color-comp-bg);
+    border: var(--border-thin);
+    padding: 10px;
+}
+
+.user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.github-user-name {
+    color: var(--color-text-primary);
+    font-weight: bold;
+    font-size: small;
+    display: block;
+}
+
+.github-display-name {
+    color: var(--color-text-secondary);
+    display: block;
+    font-size: small;
+}
+
+.user-nav-top button {
+    background-color: var(--color-comp-bg);
+    border: none;
+    border-radius: 20%;
+}
+
+.user-nav-top button:hover {
+    background-color: var(--color-comp-bg-hover);
+}
+
+.user-nav-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
