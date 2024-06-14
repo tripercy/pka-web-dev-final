@@ -9,9 +9,13 @@ function App() {
         <div className="App">
             <body>
                 <TopNav className="icon" />
-                <Latest />
-                <LeftPane />
-                <Explore />
+                <div className='content'>
+                    <LeftPane />
+                    <div className="right-pane">
+                        <Latest />
+                        <Explore />
+                    </div>
+                </div>
             </body>
         </div>
     );
