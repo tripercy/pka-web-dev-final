@@ -1,0 +1,108 @@
+.latest-changes {
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 83vh;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 20%;
+    position: absolute;
+    left: -5px;
+}
+
+.latest-changes h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.latest-changes ul {
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+
+.latest-changes ul::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: calc(100%);
+    left: 10px;
+    background: white;
+    top: 20px;
+    z-index: -1;
+    margin-top: 20px;
+
+}
+
+.latest-changes ul li{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    padding-right: -5px;
+    padding-left: -10px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.latest-changes ul li a{
+    text-align: right;
+    justify-self: flex-start;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.latest-changes ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+.latest-changes .dot {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.latest-changes .dot a{
+    padding-left: 20px;
+}
+
+
+.latest-changes ul::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: lightgray;
+}
+
+.latest-changes li:last-child .dot::after {
+    display: none;
+}
+
+.latest-changes time {
+    justify-self: flex-start;
+    color: #6a737d;
+    font-size: 12px;
+}
+
+.view-changelog {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0366d6;
+}

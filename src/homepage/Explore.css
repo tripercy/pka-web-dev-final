@@ -1,0 +1,121 @@
+.repository-list {
+    margin-left: 17vh;
+    margin-top: 0;
+    padding: 20px;
+    width: 29%;
+    font-family: Arial, sans-serif;
+    border: 1px solid white;
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    top: 34%;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    left: -5px;
+}
+
+.repository-list h1{
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.repository-item {
+    background-color: black;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.repository-item:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+
+.repository-item ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.repository-item ul li{
+    margin-right: -10px;
+    margin-left: -200px;
+    padding-left: 60px;
+    border: 1px solid white;
+    
+}
+
+.repository-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.repository-header h2:hover{
+    text-decoration: underline;
+}
+
+.repository-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.repository-header h2 {
+    margin: 0;
+}
+
+
+.repository-stars {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -20px;
+}
+
+.hoverable-icon{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hoverable-icon:hover{
+    color: gold;
+}
+
+.repository-stars span {
+    margin-left: 5px;
+}
+
+
+.repository-lang{
+    display: flex;
+    align-items: flex-start;
+    margin-left: -20px;
+    flex-direction: row;
+}
+
+.colored-dot{
+    margin-top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 10px;
+}
+
+.explore-more{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0366d6;
+    margin-left: 10px;
+}

@@ -1,10 +1,10 @@
 .App {
-  text-align: center;
+    background: black;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  pointer-events: non
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+    background-color: black;
+    /* display: flex;
+    flex-direction: column;
+    align-items: space-between */
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+
+}
+
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 70%;
 }
