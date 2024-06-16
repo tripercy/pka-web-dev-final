@@ -1,0 +1,48 @@
+.wrap {
+    /* height: 100px;
+    background-color: blue; */
+    margin: 16px 0px 0px;
+    padding: 0px 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: var(--h2-size, 24px);
+    font-weight: var(--base-text-weight-semibold, 600);
+}
+
+#filter {
+    margin-left: 30px;
+    padding: 5px 12px;
+    align-items: center;
+}
+#UserIcon{
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.no-center-align {
+    text-align: left !important; /* Hoặc 'inherit' để trở về mặc định */
+}
+
+.bg-light-gray{
+    background-color: rgba(235, 227, 227, 0.624);
+}
+.gray-text {
+    color: rgba(108, 102, 102, 0.626);
+}
+
+.name-a {
+    color: rgb(42, 39, 39);
+    font-weight: bold;
+}
+
+button:focus {
+    outline: none;
+}

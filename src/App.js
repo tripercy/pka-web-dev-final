@@ -1,8 +1,10 @@
 import './global.css'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import LeftPane from './homepage/LeftPane';
 import Latest from './homepage/Latest';
 import TopNav from './nav/TopNav';
+import FeedContainer from './body/FeedContainer'
 import UserNav from './nav/UserNav';
 import Explore from './homepage/Explore';
 
@@ -11,10 +13,11 @@ function App() {
     <div className="App">
       <body>
         <TopNav className="icon" />
-        <LeftPane />
+        <FeedContainer></FeedContainer>
+        {/* <LeftPane />
         <UserNav />
         <Latest />
-        <Explore />
+        <Explore /> */}
       </body>
     </div>
   );
