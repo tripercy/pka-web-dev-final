@@ -33,7 +33,7 @@ function SearchBar() {
     return (
         <div className="search-bar">
             <SearchIcon className="icon" />
-            <input class="search-box" type="text" placeholder="Type / to search" />
+            <input className="search-box" type="text" placeholder="Type / to search" />
             <CommandPaletteIcon className="icon" />
         </div>
     )
