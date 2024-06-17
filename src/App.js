@@ -1,5 +1,6 @@
 import './global.css'
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LeftPane from './homepage/LeftPane';
 import Latest from './homepage/Latest';
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <body>
         <TopNav className="icon" />
-        <FeedContainer></FeedContainer>
+        <FeedContainer/>
         {/* <LeftPane />
         <UserNav />
         <Latest />
