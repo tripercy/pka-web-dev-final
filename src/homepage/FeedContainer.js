@@ -4,7 +4,7 @@ import "./FeedContainer.css";
 
 function Feed() {
   return (
-    <div class="my-2 px-3">
+    <div class="my-2 px-3 col-md-6">
       <div class="d-flex justify-content-between mb-1">
         <h2>Home</h2>
         <div class="d-flex">

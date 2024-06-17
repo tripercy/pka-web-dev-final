@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LeftPane from './homepage/LeftPane';
 import Latest from './homepage/Latest';
 import TopNav from './nav/TopNav';
-import FeedContainer from './body/FeedContainer'
+import FeedContainer from './homepage/FeedContainer'
 import UserNav from './nav/UserNav';
 import Explore from './homepage/Explore';
 
@@ -15,10 +15,10 @@ function App() {
       <body>
         <TopNav className="icon" />
         <FeedContainer/>
-        {/* <LeftPane />
+        <LeftPane />
         <UserNav />
         <Latest />
-        <Explore /> */}
+        <Explore />
       </body>
     </div>
   );
