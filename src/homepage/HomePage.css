@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+
+}
+
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 70%;
+}

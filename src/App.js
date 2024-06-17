@@ -1,52 +1,32 @@
 import './App.css';
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LeftPane from './homepage/LeftPane';
-import Latest from './homepage/Latest';
-import TopNav from './nav/TopNav';
-import Explore from './homepage/Explore';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 import SignIn from './login_page/SignIn';
+import HomePage from './homepage/HomePage';
 
-const App = () => {
-    return (
-        <div className="App">
-            <body>
-                <TopNav className="icon" />
-                <div className='content'>
-                    <LeftPane />
-                    <div className="right-pane">
-                        <Latest />
-                        <Explore />
-                    </div>
-                </div>
-            </body>
-        </div>
-    );
+const router = createBrowserRouter(
+  [
+    {
+      path: '*',
+      element: <SignIn />,
+    },
+    {
+      path: '/home',
+      element: <HomePage />,
+    }
+  ]
+);
+
+function App() {
+  return (
+    <RouterProvider router={router}>
+      <div className="App">
+        <div id="root"></div>
+      </div>
+    </RouterProvider>
+  );
 }
 
-
-
-function FullApp() {
-    const [isSignedIn, setIsSignedIn] = React.useState(false);
-    const handleSignIn = () => {
-        setIsSignedIn(true);
-    };
-
-    return (
-        <Router>
-            <div>
-                <Routes>
-                    <Route path='/' element={<SignIn onSignIn={handleSignIn} />} />
-                    {isSignedIn ? (
-                        <Route path="/home" element={<App />} />
-                    ) : (
-                        <Route path="*" element={<Navigate to="/" />} />
-                    )}
-                </Routes>
-                {/* {isSignedIn ? <App /> : <SignIn onSignIn={handleSignIn} />} */}
-            </div>
-        </Router>
-    );
-}
-
-export default FullApp;
+export default App;

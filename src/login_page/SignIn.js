@@ -1,24 +1,14 @@
 import React, { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SignIn.css';
 import githubLogo from './github-logo.png';
 import closeIcon from './close.svg';
 
-const SignIn = ({onSignIn}) => {
+const SignIn = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [showAlert, setShowAlert] = useState(false);
-    const navigate = useNavigate();
-
-    const handleSignIn = () => {
-        if (username === 'admin' && password === 'admin') {
-            onSignIn(true);
-            navigate("/home");
-        } else {
-            setShowAlert(true);
-        }
-    };
 
     return (
         <div className="body">
@@ -52,7 +42,7 @@ const SignIn = ({onSignIn}) => {
                         <div className="mb-0">
                             <div className="d-flex justify-content-between">
                                 <label htmlFor="inputPassword" className="mb-2 form-label text-white inputTitle">Password</label>
-                                <a href="#" className="forget-password">Forgot password?</a>
+                                <a href="/" className="forget-password">Forgot password?</a>
                             </div>
                             <input
                                 type="password"
@@ -63,18 +53,20 @@ const SignIn = ({onSignIn}) => {
                             />
                         </div>
                     </div>
-                    <button type="button" className="btn btn-success signin-btn" onClick={handleSignIn}>Sign in</button>
+                    <Link to="home">
+                        <button type="button" className="btn btn-success signin-btn" >Sign in</button>
+                    </Link>
                 </div>
                 {/* Create Account */}
                 <div className="new-container">
-                    <span><span className="new-text">New to GitHub? </span><a href="#" style={{ fontSize: '.9rem' }}>Create an account</a>.</span>
+                    <span><span className="new-text">New to GitHub? </span><a href="/" style={{ fontSize: '.9rem' }}>Create an account</a>.</span>
                 </div>
                 {/* Links */}
                 <div className="links-container">
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Security</a>
-                    <a href="#" className="text-muted">Contact GitHub</a>
+                    <a href="/">Terms</a>
+                    <a href="/">Privacy</a>
+                    <a href="/">Security</a>
+                    <a href="/" className="text-muted">Contact GitHub</a>
                 </div>
             </div>
         </div>
