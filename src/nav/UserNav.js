@@ -53,7 +53,7 @@ function UserNavTop({ user }) {
         <div className='user-nav-top'>
             <UserInfo user={user} />
             <button onClick={closeUserNav}>
-                <XIcon className="icon" />
+                <XIcon className='usernav-icon' />
             </button>
         </div>
     )
@@ -72,33 +72,33 @@ function UserNavLists() {
     return (
         <div className='user-nav-lists'>
             <ul>
-                <li> <UserNavItem icon={<SmileyIcon className='icon' />} text="Set status" /> </li>
+                <li> <UserNavItem icon={<SmileyIcon className='usernav-icon' />} text="Set status" /> </li>
             </ul>
             <ul>
-                <li> <UserNavItem icon={<PersonIcon className='icon' />} text="Your profile" /> </li>
-                <li> <UserNavItem icon={<PersonAddIcon className='icon' />} text="Add account" /> </li>
-            </ul>
-
-            <ul>
-                <li> <UserNavItem icon={<RepoIcon className='icon' />} text="Your repositories" /> </li>
-                <li> <UserNavItem icon={<ProjectIcon className='icon' />} text="Your projects" /> </li>
-                <li> <UserNavItem icon={<CopilotIcon className='icon' />} text="Your Copilot" /> </li>
-                <li> <UserNavItem icon={<OrganizationIcon className='icon' />} text="Your organizations" /> </li>
-                <li> <UserNavItem icon={<GlobeIcon className='icon' />} text="Your enterprises" /> </li>
-                <li> <UserNavItem icon={<StarIcon className='icon' />} text="Your stars" /> </li>
-                <li> <UserNavItem icon={<HeartIcon className='icon' />} text="Your sponsors" /> </li>
-                <li> <UserNavItem icon={<CodeSquareIcon className='icon' />} text="Your gists" /> </li>
+                <li> <UserNavItem icon={<PersonIcon className='usernav-icon' />} text="Your profile" /> </li>
+                <li> <UserNavItem icon={<PersonAddIcon className='usernav-icon' />} text="Add account" /> </li>
             </ul>
 
             <ul>
-                <li> <UserNavItem icon={<GlobeIcon className='icon' />} text="Try Enterprise" /> </li>
-                <li> <UserNavItem icon={<BeakerIcon className='icon' />} text="Feature preview" /> </li>
-                <li> <UserNavItem icon={<GearIcon className='icon' />} text="Settings" /> </li>
+                <li> <UserNavItem icon={<RepoIcon className='usernav-icon' />} text="Your repositories" /> </li>
+                <li> <UserNavItem icon={<ProjectIcon className='usernav-icon' />} text="Your projects" /> </li>
+                <li> <UserNavItem icon={<CopilotIcon className='usernav-icon' />} text="Your Copilot" /> </li>
+                <li> <UserNavItem icon={<OrganizationIcon className='usernav-icon' />} text="Your organizations" /> </li>
+                <li> <UserNavItem icon={<GlobeIcon className='usernav-icon' />} text="Your enterprises" /> </li>
+                <li> <UserNavItem icon={<StarIcon className='usernav-icon' />} text="Your stars" /> </li>
+                <li> <UserNavItem icon={<HeartIcon className='usernav-icon' />} text="Your sponsors" /> </li>
+                <li> <UserNavItem icon={<CodeSquareIcon className='usernav-icon' />} text="Your gists" /> </li>
             </ul>
 
             <ul>
-                <li> <UserNavItem icon={<PeopleIcon className='icon' />} text="Github Support" /> </li>
-                <li> <UserNavItem icon={<CommentDiscussionIcon className='icon' />} text="Github Community" /> </li>
+                <li> <UserNavItem icon={<GlobeIcon className='usernav-icon' />} text="Try Enterprise" /> </li>
+                <li> <UserNavItem icon={<BeakerIcon className='usernav-icon' />} text="Feature preview" /> </li>
+                <li> <UserNavItem icon={<GearIcon className='usernav-icon' />} text="Settings" /> </li>
+            </ul>
+
+            <ul>
+                <li> <UserNavItem icon={<PeopleIcon className='usernav-icon' />} text="Github Support" /> </li>
+                <li> <UserNavItem icon={<CommentDiscussionIcon className='usernav-icon' />} text="Github Community" /> </li>
             </ul>
 
             <ul>

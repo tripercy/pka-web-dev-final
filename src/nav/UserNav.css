@@ -17,6 +17,11 @@
     z-index: 200;
 }
 
+.usernav-icon {
+    color: var(--color-text-secondary);
+    margin: 5px;
+}
+
 .user-info {
     display: flex;
     gap: 10px;
