@@ -13,12 +13,16 @@ const ExploreItem = ({ name, description, stars }) => {
             </div>
             <ul>
                 <li className="repository-stars">
-                    <StarIcon size={16} className='hoverable-icon'/>
-                    <span>{stars}</span>
+                    <div>
+                        <StarIcon size={16} className='hoverable-icon' />
+                        <span>{stars}</span>
+                    </div>
                 </li>
                 <li className="repository-lang">
-                    <div className='colored-dot'></div>
-                    <span>JavaScript</span>
+                    <div>
+                        <div className='colored-dot'></div>
+                        <span>JavaScript</span>
+                    </div>
                 </li>
             </ul>
         </div>
