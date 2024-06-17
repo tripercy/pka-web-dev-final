@@ -37,11 +37,22 @@ function UserInfo({ user }) {
     );
 }
 
+function closeUserNav() {
+    let userNav = document.querySelector('.user-nav');
+    userNav.style.display = 'none';
+}
+
+function openUserNav() {
+    let userNav = document.querySelector('.user-nav');
+    userNav.style.display = 'block';
+    userNav.style.animation = 'userNavSlideIn 0.2s';
+}
+
 function UserNavTop({ user }) {
     return (
         <div className='user-nav-top'>
             <UserInfo user={user} />
-            <button>
+            <button onClick={closeUserNav}>
                 <XIcon className="icon" />
             </button>
         </div>
@@ -100,8 +111,11 @@ function UserNavLists() {
 export default function UserNav() {
     return (
         <div className="user-nav">
+            <div className='user-nav-overlay' />
             <UserNavTop user={test_user} />
             <UserNavLists />
         </div>
     );
 }
+
+export { openUserNav };

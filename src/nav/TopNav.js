@@ -1,10 +1,11 @@
 import { ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon, TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon } from "@primer/octicons-react";
 import "./TopNav.css";
+import {openUserNav} from "./UserNav"
 
 function BtnLeftNav() {
     return (
         <button className="btn-left-nav">
-            <ThreeBarsIcon className="btn-left-nav-icon" />
+            <ThreeBarsIcon className="topnav-icon" size={"14"} />
         </button>
     )
 }
@@ -32,9 +33,9 @@ function LeftPart({ loc }) {
 function SearchBar() {
     return (
         <div className="search-bar">
-            <SearchIcon className="icon" />
+            <SearchIcon className="topnav-icon" />
             <input className="search-box" type="text" placeholder="Type / to search" />
-            <CommandPaletteIcon className="icon" />
+            <CommandPaletteIcon className="topnav-icon" />
         </div>
     )
 }
@@ -46,24 +47,25 @@ function RightPart() {
 
             <div className="top-nav-buttons">
                 <button>
-                    <PlusIcon className="icon" />
-                    <TriangleDownIcon className="icon" />
+                    <PlusIcon className="topnav-icon" />
+                    <TriangleDownIcon className="topnav-icon" />
                 </button>
 
                 <button>
-                    <IssueOpenedIcon className="icon" />
+                    <IssueOpenedIcon className="topnav-icon" />
                 </button>
 
                 <button>
-                    <GitPullRequestIcon className="icon" />
+                    <GitPullRequestIcon className="topnav-icon" />
                 </button>
 
                 <button>
-                    <InboxIcon className="icon" />
+                    <InboxIcon className="topnav-icon" />
                 </button>
             </div>
-
-            <img id="profile-pic" src="https://avatars.githubusercontent.com/u/64069046" alt="profile-pic"></img>
+            <button onClick={openUserNav}>
+                <img id="profile-pic" src="https://avatars.githubusercontent.com/u/64069046" alt="profile-pic"></img>
+            </button>
         </div>
     )
 
