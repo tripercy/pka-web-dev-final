@@ -1,14 +1,16 @@
 // import { ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon, TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon } from "@primer/octicons-react";
 import "./FeedContainer.css";
+import Dropdown from "react-bootstrap/Dropdown";
+
 // import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
 function Feed() {
   return (
-    <div class="my-2 px-3 col-md-6">
+    <div class="my-2 px-3 ">
       <div class="d-flex justify-content-between mb-1">
         <h2>Home</h2>
         <div class="d-flex">
-          <a href="#" class="mx-4 py-2 align-items-center">
+          <a href="#" class="mx-4 py-2 align-items-center text-primary text-decoration-underline">
             Send feedback
           </a>
           <button type="button" class="btn btn-light border d-flex">
@@ -22,7 +24,7 @@ function Feed() {
             >
               <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"></path>
             </svg>
-            <p class="m-0 px-1">Filter</p>
+            <p class="m-0 px-1">Filter<span class="badge">12</span></p>
           </button>
         </div>
       </div>
@@ -35,7 +37,7 @@ function Feed() {
           <div class=" d-flex justify-content-between flex-grow-1">
             <div>
               <div class="d-flex m-0">
-                <a href="#" class="text-start text-decoration-none name-a">
+                <a href="#" class="text-start text-decoration-none name-a ">
                   Kevin/spce
                 </a>
                 <p class="mx-1 mb-0 gray-text">released</p>
@@ -43,7 +45,7 @@ function Feed() {
               <span class="text-start small gray-text">2 week</span>
             </div>
 
-            <div class="d-flex ">
+            <div class="d-flex align-items-center">
               <button
                 type="button"
                 class="btn btn-light d-flex border m-2"
@@ -62,18 +64,31 @@ function Feed() {
                 <p class="m-0 mx-2">Sponsor</p>
               </button>
 
-              <button type="button" class="btn btn-link ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="black"
-                  class="bi bi-three-dots"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"></path>
-                </svg>
-              </button>
+              <Dropdown >
+                <Dropdown.Toggle variant="link" id="dropdown-basic" bsPrefix='none' >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="black"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"></path>
+                  </svg>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.ItemText class="small text-nowrap gray-text px-3">You're seeing this because you starred fatedier/frp</Dropdown.ItemText>
+                  <Dropdown.Divider />
+                  <Dropdown.Item href="#/action-2" className="text-hover-blue p-3">
+                    Show less activity like this
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3" className="text-hover-blue p-3">
+                    Unstart this repository
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </header>
@@ -90,7 +105,7 @@ function Feed() {
               parameters are inconsistent with other confi…
             </li>
           </ul>
-          <a href="#">Read more</a>
+          <a href="#" class="text-primary text-decoration-underline">Read more</a>
         </div>
         <div class="d-flex gap-2 mb-3 p-3">
           <button type="button" class="btn border btn-light radious-5">

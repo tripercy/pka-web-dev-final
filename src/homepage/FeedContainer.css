@@ -46,3 +46,8 @@ h2 {
 button:focus {
     outline: none;
 }
+
+.text-hover-blue:hover {
+    color: rgb(241, 241, 245);
+    background-color: rgb(68, 68, 184);
+  }
