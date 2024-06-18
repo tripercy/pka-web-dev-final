@@ -9,8 +9,8 @@ const repositories = [
 
 const Explore = () => {
     return (
-        <div className="repository-list">
-            <span>Explore Repositories</span>
+        <div className="repository-list flex-column left-panel px-3 py-3 text-bg-dark">
+            <h3>Explore Repositories</h3>
             {repositories.map(repo => (
                 <ExploreItem
                     key={repo.name}

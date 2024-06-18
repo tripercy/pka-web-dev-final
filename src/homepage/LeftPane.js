@@ -30,13 +30,14 @@ export default function LeftPane() {
   };
 
   return (
-    <div class="d-flex flex-column left-panel p-3 text-bg-dark">
+    <div class="d-flex flex-column left-panel p-3  text-bg-dark border-1">
       {/* Account switch */}
       <Dropdown data-bs-theme="dark">
         <Dropdown.Toggle
           variant="dark"
           id="dropdown-basic"
-          class="align-items-center dropdown-toggle-no-hover"
+          style={{ backgroundColor: '#0a0a0a',border: 'none' }}
+          class="align-items-center dropdown-toggle-no-hover "
         >
           <Image
             src="https://avatars.githubusercontent.com/u/54128762?v=4"
@@ -146,7 +147,7 @@ export default function LeftPane() {
       {/* Top repository */}
       <div class="my-2">
         <div class="d-flex flex-row justify-content-between my-2">
-          <h6>Top Repository</h6>
+          <h5>Top Repository</h5>
           <Button variant="success">
             <svg
               aria-hidden="true"
@@ -169,9 +170,9 @@ export default function LeftPane() {
           data-bs-theme="dark"
         />
         <div class="my-2">
-          <ul className="list-group list-group-flush">
+          <ul className="list-group list-group-flush ">
             {items.slice(0, visibleItems).map((item, index) => (
-              <li key={index} className="list-group-item">
+              <li key={index} className="list-group-item text-bg-dark">
                 <a href="#">
                   <Image
                     src="https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/github.svg"

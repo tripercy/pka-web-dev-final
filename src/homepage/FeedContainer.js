@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 function Feed() {
   return (
-    <div class="my-3 p-3 bg-dark" >
+    <div class="my-0 p-3 bg-landing-dark" >
       <div class="d-flex justify-content-between mb-1">
         <h2 class="text-light">Home</h2>
         <div class="d-flex">
@@ -29,7 +29,7 @@ function Feed() {
         </div>
       </div>
 
-      <div class="py-1 border border-secondary rounded-2">
+      <div class="py-2 my-3 border border-secondary rounded-2 text-bg-dark">
         <header class="d-flex mt-1 mb-2 px-3">
           <div class="mr-2">
             <div id="UserIcon"></div>
