@@ -1,26 +1,33 @@
 import './global.css'
 import './App.css';
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LeftPane from './homepage/LeftPane';
-import Latest from './homepage/Latest';
-import TopNav from './nav/TopNav';
-import FeedContainer from './homepage/FeedContainer'
-import UserNav from './nav/UserNav';
-import Explore from './homepage/Explore';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import SignIn from './login_page/SignIn';
+import HomePage from './homepage/HomePage';
+
+const router = createBrowserRouter(
+  [
+    {
+      path: '*',
+      element: <SignIn />,
+    },
+    {
+      path: '/home',
+      element: <HomePage />,
+    }
+  ]
+);
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <TopNav className="icon" />
-        <FeedContainer/>
-        <LeftPane />
-        <UserNav />
-        <Latest />
-        <Explore />
-      </body>
-    </div>
+    <RouterProvider router={router}>
+      <div className="App">
+        <div id="root"></div>
+      </div>
+    </RouterProvider>
   );
 }
 

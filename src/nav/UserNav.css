@@ -1,14 +1,25 @@
 .user-nav {
-    background-color: var(--color-comp-bg);
+    background-color: var(--color-bg);
     border: var(--border-thin);
     padding: 10px;
     color: white;
 
     width: 20vw;
+    height: 100vh;
     position: absolute;
     right: 0;
+    top: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+
+    display: none;
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+    z-index: 200;
+}
+
+.usernav-icon {
+    color: var(--color-text-secondary);
+    margin: 5px;
 }
 
 .user-info {
@@ -31,7 +42,7 @@
 }
 
 .user-nav-top button {
-    background-color: var(--color-comp-bg);
+    background-color: var(--color-bg);
     border: none;
     border-radius: 20%;
 }
@@ -71,7 +82,7 @@
 
 .user-nav-item {
     width: 100%;
-    background-color: var(--color-comp-bg);
+    background-color: var(--color-bg);
     border: none;
     border-radius: 10px;
     padding: 2px;
@@ -85,4 +96,14 @@
 .user-nav-item:hover {
     background-color: var(--color-comp-bg-hover);
     cursor: pointer;
+}
+
+@keyframes userNavSlideIn {
+    from {
+        right: -20vw;
+    }
+
+    to {
+        right: 0;
+    }
 }

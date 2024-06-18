@@ -10,16 +10,8 @@
 
 .btn-left-nav {
     background-color: black;
-    border: none;
-}
-
-.btn-left-nav-icon {
-    background-color: black;
-    border: 0.3px solid ;
-    color: #8D96A0;
-    cursor: pointer;
+    border: var(--border-thin);
     border-radius: 5px;
-    padding: 5px;
 }
 
 .btn-left-nav img {
@@ -73,7 +65,7 @@
     outline: none;
 }
 
-.icon {
+.topnav-icon {
     color: var(--color-text-secondary);
     margin: 5px;
 }
