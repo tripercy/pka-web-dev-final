@@ -32,10 +32,10 @@ h2 {
 }
 
 .bg-light-gray{
-    background-color: rgba(235, 227, 227, 0.624);
+    background-color: rgb(46, 46, 46);
 }
 .gray-text {
-    color: rgba(108, 102, 102, 0.626);
+    color: rgba(189, 179, 179, 0.626);
 }
 
 .name-a {
@@ -51,3 +51,9 @@ button:focus {
     color: rgb(241, 241, 245);
     background-color: rgb(68, 68, 184);
   }
+
+.badge{
+    background-color: rgb(84, 83, 82);
+    border-radius: 10px;
+    margin-left: 5px;
+}
