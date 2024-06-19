@@ -16,6 +16,8 @@
     align-items: flex-start;
     justify-content: space-between;
 
+    gap: 10px;
+
     font-size: smaller;
     color: var(--color-text-secondary);
 }

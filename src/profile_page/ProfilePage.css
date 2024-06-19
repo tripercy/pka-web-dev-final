@@ -1,3 +1,17 @@
 .profile-page {
     background-color: var(--color-bg);
+    min-height: 100vh;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-right {
+    width: 60%;
+    color: var(--color-text-primary);
 }
