@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './UserNav.css'
 import {
     XIcon,
@@ -59,12 +60,14 @@ function UserNavTop({ user }) {
     )
 }
 
-function UserNavItem({ icon, text }) {
+function UserNavItem({ icon, text, linkTo = "/home" }) {
     return (
-        <button className='user-nav-item'>
-            {icon}
-            <span>{text}</span>
-        </button>
+        <Link to={linkTo}>
+            <button className='user-nav-item'>
+                {icon}
+                <span>{text}</span>
+            </button>
+        </Link>
     );
 }
 
@@ -75,7 +78,7 @@ function UserNavLists() {
                 <li> <UserNavItem icon={<SmileyIcon className='usernav-icon' />} text="Set status" /> </li>
             </ul>
             <ul>
-                <li> <UserNavItem icon={<PersonIcon className='usernav-icon' />} text="Your profile" /> </li>
+                <li> <UserNavItem icon={<PersonIcon className='usernav-icon' />} text="Your profile" linkTo='/profile' /> </li>
                 <li> <UserNavItem icon={<PersonAddIcon className='usernav-icon' />} text="Add account" /> </li>
             </ul>
 

@@ -72,10 +72,10 @@ function RightPart() {
 
 }
 
-export default function TopNav() {
+export default function TopNav({loc = "Dashboard"}) {
     return (
         <nav className="top-nav">
-            <LeftPart loc="Dashboard" />
+            <LeftPart loc={loc} />
             <RightPart />
         </nav>
     )
