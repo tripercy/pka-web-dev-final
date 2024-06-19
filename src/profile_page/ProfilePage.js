@@ -4,6 +4,7 @@ import LeftNav from "../nav/LeftNav";
 
 import './ProfilePage.css';
 import ProfileOverview from "./ProfileOverview";
+import PopularRepos from "./PopularRepos";
 
 export default function ProfilePage() {
     return (
@@ -14,6 +15,7 @@ export default function ProfilePage() {
 
             <div className="profile-content">
                 <ProfileOverview />
+                <PopularRepos />
             </div>
         </div>
     );

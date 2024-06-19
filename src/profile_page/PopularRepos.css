@@ -1,0 +1,63 @@
+.repo-card {
+    background-color: var(--color-bg);
+    border: var(--border-thin);
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.repo-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-size: smaller;
+    color: var(--color-text-secondary);
+}
+
+.repo-card-info a {
+    color: skyblue;
+    font-weight: bold;
+}
+
+.repo-card-info a:hover {
+    text-decoration: underline;
+}
+
+.repo-card-info span:last-child::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.repo-card-vis {
+    border: var(--border-thin);
+    color: var(--color-text-secondary);
+
+    padding: 5px;
+    border-radius: 10px;
+
+    font-size: smaller;
+}
+
+.popular-repos span {
+    color: var(--color-text-primary);
+}
+
+.popular-repos ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+}
+
+.popular-repos ul li {
+    margin: 5px;
+}
