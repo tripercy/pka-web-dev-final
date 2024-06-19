@@ -1,5 +1,4 @@
 .left-panel {
-    width: 30%;
     background-color: black;
     color: white;
     /* padding: 20px;
@@ -20,6 +19,7 @@ p {
         color: transparent;
     }
 }
+
 
 .custom-dropdown-menu {
     width: 300px;

@@ -19,7 +19,8 @@ h2 {
     padding: 5px 12px;
     align-items: center;
 }
-#UserIcon{
+
+#UserIcon {
     height: 40px;
     width: 40px;
     margin-right: 6px;
@@ -28,12 +29,14 @@ h2 {
 }
 
 .no-center-align {
-    text-align: left !important; /* Hoặc 'inherit' để trở về mặc định */
+    text-align: left !important;
+    /* Hoặc 'inherit' để trở về mặc định */
 }
 
-.bg-light-gray{
+.bg-light-gray {
     background-color: rgb(46, 46, 46);
 }
+
 .gray-text {
     color: rgba(189, 179, 179, 0.626);
 }
@@ -50,10 +53,24 @@ button:focus {
 .text-hover-blue:hover {
     color: rgb(241, 241, 245);
     background-color: rgb(68, 68, 184);
-  }
+}
 
-.badge{
+.badge {
     background-color: rgb(84, 83, 82);
     border-radius: 10px;
     margin-left: 5px;
+}
+
+.btn-reaction {
+    /* background-color: rgb(84, 83, 82); */
+    border: 1px solid #30363db3;
+    border-radius: 20px;
+    color: white;
+    margin-left: 5px;
+    margin: 5px;
+
+}
+
+.btn-reaction:hover {
+    background-color: rgb(84, 83, 82);
 }

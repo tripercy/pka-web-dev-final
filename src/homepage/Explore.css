@@ -1,13 +1,15 @@
 .repository-list {
-    font-family: Arial, sans-serif;
     border-radius: 5px;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
     padding: 20px;
-    width: 30vw;
+    /* width: 30vw; */
 }
 
 .repository-list span{
@@ -15,7 +17,6 @@
 }
 
 .repository-item {
-    background-color: black;
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid gray;
@@ -46,7 +47,7 @@
     align-items: flex-start;
 }
 
-.repository-header h2:hover{
+.repository-header h4:hover{
     text-decoration: underline;
 }
 
@@ -56,8 +57,9 @@
     align-items: flex-start;
 }
 
-.repository-header h2 {
+.repository-header h4 {
     margin: 0;
+    font-weight: bold;
 }
 
 
