@@ -1,10 +1,11 @@
 import { ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon, TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon } from "@primer/octicons-react";
 import "./TopNav.css";
-import {openUserNav} from "./UserNav"
+import { openUserNav } from "./UserNav"
+import { OpenLeftNav } from "./LeftNav";
 
 function BtnLeftNav() {
     return (
-        <button className="btn-left-nav">
+        <button className="btn-left-nav" onClick={OpenLeftNav}>
             <ThreeBarsIcon className="topnav-icon" size={"14"} />
         </button>
     )

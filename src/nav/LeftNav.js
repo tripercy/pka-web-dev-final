@@ -12,11 +12,22 @@ import {
     SearchIcon
 } from '@primer/octicons-react';
 
+function OpenLeftNav() {
+    let leftNav = document.querySelector('.left-nav');
+    leftNav.style.display = 'block';
+    leftNav.style.animation = 'leftNavSlideIn 0.2s';
+}
+
+function CloseLeftNav() {
+    let leftNav = document.querySelector('.left-nav');
+    leftNav.style.display = 'none';
+}
+
 function LeftNavTop() {
     return (
         <div className='left-nav-top'>
             <img src="https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/github.svg" alt="github-logo"></img>
-            <button>
+            <button onClick={CloseLeftNav}>
                 <XIcon className="left-nav-icon" />
             </button>
         </div>
@@ -92,3 +103,5 @@ export default function LeftNav() {
         </div>
     );
 }
+
+export { OpenLeftNav };

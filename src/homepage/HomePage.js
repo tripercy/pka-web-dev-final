@@ -8,12 +8,14 @@ import UserNav from "../nav/UserNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./HomePage.css";
+import LeftNav from "../nav/LeftNav";
 
 export default function HomePage() {
   return (
     <div className="bg-landing-dark">
       <TopNav />
       <UserNav />
+      <LeftNav />
       <div class="container-fluid">
         <div class="row">
           <div class="col gx-0 ">

@@ -1,6 +1,6 @@
 .left-nav {
     background-color: var(--color-bg);
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
 
     padding: 10px;
@@ -8,6 +8,14 @@
     border-right: var(--border-thin);
     border-top: var(--border-thin);
     border-radius: 5px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+
+    display: none;
 }
 
 .left-nav-top {
@@ -93,4 +101,13 @@
 .left-nav-repo-top span {
     font-size: small;
     font-weight: bold;
+}
+
+@keyframes leftNavSlideIn {
+    from {
+        left: -20vw;
+    }
+    to {
+        left: 0;
+    }
 }
