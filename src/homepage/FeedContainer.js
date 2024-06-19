@@ -1,16 +1,108 @@
 // import { ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon, TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon } from "@primer/octicons-react";
+import { version } from "react";
 import "./FeedContainer.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import  NewsCardItem from "./FeedContainerItem"
 
 // import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+const newsfeed = [
+  {
+    avatar: "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/github.svg",
+    name: "Kevin/apple",
+    status: "release",
+    time: "2 weeks",
+    version: "v15.0.6",
+    title: "Fix bug",
+    description: [
+      "Fixed an issue where HTTP/2 was not enabled for https2http and https2https plugins.",
+      "Fixed the issue where the default values of INI configuration parameters are inconsistent with other configurations.",
+    ],
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/visualstudio.svg",
+    "name": "Sophie/vscode",
+    "status": "updated",
+    "time": "1 week",
+    "version": "v1.59.0",
+    "title": "Editor Enhancements",
+    "description": [
+      "Added new code refactoring tools for improved code quality and maintainability.",
+      "Improved IntelliSense performance for faster and more accurate code completion suggestions."
+    ]
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/git.svg",
+    "name": "Mike/git",
+    "status": "planned",
+    "time": "6 months",
+    "version": "v2.32.0",
+    "title": "Version Control Improvements",
+    "description": [
+      "Planning to introduce file locking mechanism to prevent merge conflicts in collaborative projects.",
+      "Proposing a new command-line interface for more intuitive version control operations."
+    ]
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/html5.svg",
+    "name": "Laura/html5",
+    "status": "launched",
+    "time": "2 weeks",
+    "version": "",
+    "title": "Semantic Elements Update",
+    "description": [
+      "New semantic elements introduced for better document structure and SEO.",
+      "Deprecated tags removed and documentation updated to reflect best practices."
+    ]
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/code.svg",
+    "name": "Linda/nodejs",
+    "status": "development",
+    "time": "1 month",
+    "version": "v12.3.0",
+    "title": "Performance Improvements",
+    "description": [
+      "Enhanced performance of the event loop by optimizing callback execution.",
+      "Improved the efficiency of memory allocation and garbage collection processes."
+    ]
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/npm.svg",
+    "name": "James/react",
+    "status": "testing",
+    "time": "3 days",
+    "version": "v17.0.2",
+    "title": "New Features",
+    "description": [
+      "Added support for concurrent mode in React for better handling of asynchronous rendering tasks.",
+      "Introduced a new API for managing state transitions more effectively."
+    ]
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/docker.svg",
+    "name": "Alex/docker",
+    "status": "deployed",
+    "time": "2 months",
+    "version": "v20.10.7",
+    "title": "Security Update",
+    "description": [
+      "Addressed critical security vulnerabilities affecting container isolation.",
+      "Implemented enhanced security protocols for image signing and verification."
+    ]
+  }
+];
 
 function Feed() {
+  
   return (
-    <div class="my-0 p-3 bg-landing-dark" >
+    <div class="my-0 p-3 bg-landing-dark">
       <div class="d-flex justify-content-between mb-1">
         <h2 class="text-light">Home</h2>
         <div class="d-flex">
-          <a href="#" class="mx-4 py-2 align-items-center text-primary text-decoration-underline">
+          <a
+            href="#"
+            class="mx-4 py-2 align-items-center text-primary text-decoration-underline"
+          >
             Send feedback
           </a>
           <button type="button" class="btn btn-dark border d-flex">
@@ -24,12 +116,14 @@ function Feed() {
             >
               <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"></path>
             </svg>
-            <p class="m-0 px-1">Filter<span class="badge">12</span></p>
+            <p class="m-0 px-1">
+              Filter<span class="badge">12</span>
+            </p>
           </button>
         </div>
       </div>
 
-      <div class="py-2 my-3 border border-secondary rounded-2 text-bg-dark">
+      {/* <div class="py-2 my-3 border border-secondary rounded-2 text-bg-dark">
         <header class="d-flex mt-1 mb-2 px-3">
           <div class="mr-2">
             <div id="UserIcon"></div>
@@ -37,7 +131,10 @@ function Feed() {
           <div class=" d-flex justify-content-between flex-grow-1">
             <div>
               <div class="d-flex m-0">
-                <a href="#" class="text-start text-decoration-none name-a text-light ">
+                <a
+                  href="#"
+                  class="text-start text-decoration-none name-a text-light "
+                >
                   Kevin/spce
                 </a>
                 <p class="mx-1 mb-0 gray-text">released</p>
@@ -65,7 +162,11 @@ function Feed() {
               </button>
 
               <Dropdown data-bs-theme="dark">
-                <Dropdown.Toggle variant="link" id="dropdown-basic" bsPrefix='none'  >
+                <Dropdown.Toggle
+                  variant="link"
+                  id="dropdown-basic"
+                  bsPrefix="none"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -79,12 +180,20 @@ function Feed() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.ItemText class="small text-nowrap gray-text px-3">You're seeing this because you starred fatedier/frp</Dropdown.ItemText>
+                  <Dropdown.ItemText class="small text-nowrap gray-text px-3">
+                    You're seeing this because you starred fatedier/frp
+                  </Dropdown.ItemText>
                   <Dropdown.Divider />
-                  <Dropdown.Item href="#/action-2" className="text-hover-blue p-3">
+                  <Dropdown.Item
+                    href="#/action-2"
+                    className="text-hover-blue p-3"
+                  >
                     Show less activity like this
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3" className="text-hover-blue p-3">
+                  <Dropdown.Item
+                    href="#/action-3"
+                    className="text-hover-blue p-3"
+                  >
                     Unstart this repository
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -105,7 +214,9 @@ function Feed() {
               parameters are inconsistent with other confi…
             </li>
           </ul>
-          <a href="#" class="text-primary text-decoration-underline">Read more</a>
+          <a href="#" class="text-primary text-decoration-underline">
+            Read more
+          </a>
         </div>
         <div class="d-flex gap-2 mb-3 p-3">
           <button type="button" class="btn border btn-dark radious-5">
@@ -166,7 +277,19 @@ function Feed() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {newsfeed.map(news => (
+                <NewsCardItem
+                    avartar={news.avartar}
+                    name={news.name}
+                    status={news.status}
+                    time={news.time}
+                    version={news.version}
+                    title={news.title}
+                    description={news.description}
+                />
+            ))}
     </div>
   );
 }

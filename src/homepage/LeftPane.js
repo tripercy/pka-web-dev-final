@@ -30,8 +30,8 @@ export default function LeftPane() {
   };
 
   return (
-    <div class="d-flex flex-column left-panel p-3  text-bg-dark border-1">
-      {/* Account switch */}
+    <div class="d-flex flex-column left-panel p-3  text-bg-dark " style={{ borderRight: '1px solid #30363db3', height: '100%'}}                                                            >
+      {/* Account switch */}                                                  
       <Dropdown data-bs-theme="dark">
         <Dropdown.Toggle
           variant="dark"
