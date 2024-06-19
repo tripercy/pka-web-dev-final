@@ -1,35 +1,25 @@
 .repository-list {
-    margin-left: 17vh;
-    margin-top: 0;
-    padding: 20px;
-    width: 29%;
-    font-family: Arial, sans-serif;
-    border: 1px solid white;
-    /* border-radius: 5px; */
+    border-radius: 5px;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
-    top: 34%;
-    position: relative;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    left: -5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 20px;
+    /* width: 30vw; */
 }
 
-.repository-list h1{
-    margin-left: 20px;
+.repository-list span{
     font-weight: bold;
-    color: white;
 }
 
 .repository-item {
-    background-color: black;
-    width: 90%;
+    width: 100%;
     padding: 20px;
-    margin-bottom: 10px;
     border-bottom: 1px solid gray;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -45,16 +35,11 @@
     list-style: none;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding-left: 0px;
+    gap: 10px;
 }
 
-.repository-item ul li{
-    margin-right: -10px;
-    margin-left: -200px;
-    padding-left: 60px;
-    border: 1px solid white;
-    
-}
 
 .repository-desc {
     display: flex;
@@ -62,7 +47,7 @@
     align-items: flex-start;
 }
 
-.repository-header h2:hover{
+.repository-header h4:hover{
     text-decoration: underline;
 }
 
@@ -72,15 +57,15 @@
     align-items: flex-start;
 }
 
-.repository-header h2 {
+.repository-header h4 {
     margin: 0;
+    font-weight: bold;
 }
 
 
 .repository-stars {
     display: flex;
     align-items: flex-start;
-    margin-left: -20px;
 }
 
 .hoverable-icon{
@@ -92,16 +77,11 @@
     color: gold;
 }
 
-.repository-stars span {
-    margin-left: 5px;
-}
-
-
-.repository-lang{
+.repository-lang div{
     display: flex;
-    align-items: flex-start;
-    margin-left: -20px;
+    align-items: center;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .colored-dot{

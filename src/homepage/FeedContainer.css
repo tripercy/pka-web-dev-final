@@ -1,0 +1,76 @@
+.wrap {
+    /* height: 100px;
+    background-color: blue; */
+    margin: 16px 0px 0px;
+    padding: 0px 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: var(--h2-size, 24px);
+    font-weight: var(--base-text-weight-semibold, 600);
+}
+
+#filter {
+    margin-left: 30px;
+    padding: 5px 12px;
+    align-items: center;
+}
+
+#UserIcon {
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.no-center-align {
+    text-align: left !important;
+    /* Hoặc 'inherit' để trở về mặc định */
+}
+
+.bg-light-gray {
+    background-color: rgb(46, 46, 46);
+}
+
+.gray-text {
+    color: rgba(189, 179, 179, 0.626);
+}
+
+.name-a {
+    color: rgb(42, 39, 39);
+    font-weight: bold;
+}
+
+button:focus {
+    outline: none;
+}
+
+.text-hover-blue:hover {
+    color: rgb(241, 241, 245);
+    background-color: rgb(68, 68, 184);
+}
+
+.badge {
+    background-color: rgb(84, 83, 82);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.btn-reaction {
+    /* background-color: rgb(84, 83, 82); */
+    border: 1px solid #30363db3;
+    border-radius: 20px;
+    color: white;
+    margin-left: 5px;
+    margin: 5px;
+
+}
+
+.btn-reaction:hover {
+    background-color: rgb(84, 83, 82);
+}

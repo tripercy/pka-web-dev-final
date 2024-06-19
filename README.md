@@ -35,4 +35,4 @@ npm start
   <img src="https://contrib.rocks/image?repo=tripercy/pka-web-dev-final" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
+__Made with [contrib.rocks](https://contrib.rocks).__

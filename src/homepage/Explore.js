@@ -1,11 +1,6 @@
 import './Explore.css'
 import ExploreItem from './ExploreItem'
 
-import {ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon,
-    TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon,
-    StarIcon
-} from "@primer/octicons-react";
-
 const repositories = [
     { name: 'Nemo / react', description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.', stars: 168000 },
     { name: 'Asaini / vue', description: '🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.', stars: 183000 },
@@ -14,8 +9,8 @@ const repositories = [
 
 const Explore = () => {
     return (
-        <div className="repository-list">
-            <h1>Explore Repositories</h1>
+        <div className="repository-list flex-column left-panel px-3 py-3 text-bg-dark">
+            <h3>Explore Repositories</h3>
             {repositories.map(repo => (
                 <ExploreItem
                     key={repo.name}

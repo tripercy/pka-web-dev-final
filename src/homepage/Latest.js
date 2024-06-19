@@ -15,7 +15,7 @@ export default function Latest() {
     ];
 
     return (
-        <div className="latest-changes">
+        <div className=" latest-changes flex-column left-panel px-3 py-3 text-bg-dark ">
             <h3>Latest Changes</h3>
             <ul>
                 {changes.map((change, index) => (
