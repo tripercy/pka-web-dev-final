@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/pka-web-dev-final/static/css/main.6bc2fe4a.css",
-    "main.js": "/pka-web-dev-final/static/js/main.f1915b8e.js",
-    "static/js/453.84c076b9.chunk.js": "/pka-web-dev-final/static/js/453.84c076b9.chunk.js",
+    "main.css": "/pka-web-dev-final/static/css/main.742a89fd.css",
+    "main.js": "/pka-web-dev-final/static/js/main.7aa6b924.js",
+    "static/js/453.00675b6b.chunk.js": "/pka-web-dev-final/static/js/453.00675b6b.chunk.js",
     "index.html": "/pka-web-dev-final/index.html",
-    "main.6bc2fe4a.css.map": "/pka-web-dev-final/static/css/main.6bc2fe4a.css.map",
-    "main.f1915b8e.js.map": "/pka-web-dev-final/static/js/main.f1915b8e.js.map",
-    "453.84c076b9.chunk.js.map": "/pka-web-dev-final/static/js/453.84c076b9.chunk.js.map"
+    "static/media/close.svg": "/pka-web-dev-final/static/media/close.ba672611f25af4e386ba2c744a1c1994.svg",
+    "main.742a89fd.css.map": "/pka-web-dev-final/static/css/main.742a89fd.css.map",
+    "main.7aa6b924.js.map": "/pka-web-dev-final/static/js/main.7aa6b924.js.map",
+    "453.00675b6b.chunk.js.map": "/pka-web-dev-final/static/js/453.00675b6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bc2fe4a.css",
-    "static/js/main.f1915b8e.js"
+    "static/css/main.742a89fd.css",
+    "static/js/main.7aa6b924.js"
   ]
 }
