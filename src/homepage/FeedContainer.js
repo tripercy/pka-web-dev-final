@@ -1,7 +1,4 @@
-// import { ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon, TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon } from "@primer/octicons-react";
-import { version } from "react";
 import "./FeedContainer.css";
-import Dropdown from "react-bootstrap/Dropdown";
 import  NewsCardItem from "./FeedContainerItem"
 
 // import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
@@ -100,7 +97,7 @@ function Feed() {
         <h2 class="text-light">Home</h2>
         <div class="d-flex">
           <a
-            href="#"
+            href="/home"
             class="mx-4 py-2 align-items-center text-primary text-decoration-underline"
           >
             Send feedback
@@ -132,7 +129,7 @@ function Feed() {
             <div>
               <div class="d-flex m-0">
                 <a
-                  href="#"
+                  href="/home"
                   class="text-start text-decoration-none name-a text-light "
                 >
                   Kevin/spce
@@ -214,7 +211,7 @@ function Feed() {
               parameters are inconsistent with other confi…
             </li>
           </ul>
-          <a href="#" class="text-primary text-decoration-underline">
+          <a href="/home" class="text-primary text-decoration-underline">
             Read more
           </a>
         </div>

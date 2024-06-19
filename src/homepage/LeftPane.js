@@ -173,7 +173,7 @@ export default function LeftPane() {
           <ul className="list-group list-group-flush ">
             {items.slice(0, visibleItems).map((item, index) => (
               <li key={index} className="list-group-item text-bg-dark">
-                <a href="#">
+                <a href="/home">
                   <Image
                     src="https://raw.githubusercontent.com/rdimascio/icons/master/icons/light/github.svg"
                     roundedCircle
@@ -212,7 +212,7 @@ export default function LeftPane() {
         <div>
           <div class="d-flex flex-start align-items-center my-2">
             <div class="mr-1">
-              <a href="#">
+              <a href="/home">
                 <svg
                   aria-label="Open issue"
                   role="img"
@@ -237,12 +237,12 @@ export default function LeftPane() {
 
             <div class="mx-2 px-1">
               <p>
-                <a href="#" class="gray-text hover-blue ">
+                <a href="/home" class="gray-text hover-blue ">
                   tripercy/pka-web-dev-final
                 </a>
               </p>
               <p>
-                <a href="#" class="hover-underline">
+                <a href="/home" class="hover-underline">
                   Homepage news card
                 </a>
               </p>
@@ -250,7 +250,7 @@ export default function LeftPane() {
           </div>
           <div class="d-flex flex-start align-items-center my-2">
             <div class="mr-1">
-              <a href="#">
+              <a href="/home">
                 <svg
                   aria-label="Open issue"
                   role="img"
@@ -275,12 +275,12 @@ export default function LeftPane() {
 
             <div class="mx-2 px-1">
               <p>
-                <a href="#" class="gray-text hover-blue ">
+                <a href="/home" class="gray-text hover-blue ">
                   haitheone123/pka-web-dev-final
                 </a>
               </p>
               <p>
-                <a href="#" class="hover-underline">
+                <a href="/home" class="hover-underline">
                   Login page
                 </a>
               </p>
@@ -288,7 +288,7 @@ export default function LeftPane() {
           </div>
           <div class="d-flex flex-start align-items-center my-2">
             <div class="mr-1">
-              <a href="#">
+              <a href="/home">
                 <svg
                   aria-label="Open issue"
                   role="img"
@@ -313,12 +313,12 @@ export default function LeftPane() {
 
             <div class="mx-2 px-1">
               <p>
-                <a href="#" class="gray-text hover-blue ">
+                <a href="/home" class="gray-text hover-blue ">
                   SkyjackerFWO/pka-web-dev-final
                 </a>
               </p>
               <p>
-                <a href="#" class="hover-underline">
+                <a href="/home" class="hover-underline">
                   Nav Bar
                 </a>
               </p>

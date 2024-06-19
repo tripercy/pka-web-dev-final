@@ -1,10 +1,5 @@
 import "./Latest.css"
 
-import {
-    ThreeBarsIcon, CommandPaletteIcon, SearchIcon, PlusIcon,
-    TriangleDownIcon, IssueOpenedIcon, GitPullRequestIcon, InboxIcon
-} from "@primer/octicons-react";
-
 export default function Latest() {
     const changes = [
         { text: 'Added new authentication feature.', time: '10 minutes ago' },
@@ -22,7 +17,7 @@ export default function Latest() {
                     <li key={index}>
                         <time>{change.time}</time>
                         <span className='dot'></span>
-                        <a>{change.text}</a>
+                        <a href="/home">{change.text}</a>
                     </li>
                 ))}
             </ul>

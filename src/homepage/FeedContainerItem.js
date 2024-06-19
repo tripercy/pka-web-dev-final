@@ -40,7 +40,7 @@ const NewsCardItem = ({
           <div>
             <div class="d-flex m-0">
               <a
-                href="#"
+                href="/home"
                 class="text-start text-decoration-none name-a text-light "
               >
                 {name}
@@ -117,7 +117,7 @@ const NewsCardItem = ({
             <li key={itemIndex}>{item}</li>
           ))}
         </ul>
-        <a href="#" class="text-primary text-decoration-underline">
+        <a href="/home" class="text-primary text-decoration-underline">
           Read more
         </a>
       </div>
