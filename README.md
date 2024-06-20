@@ -1,9 +1,12 @@
 # pka-web-dev-final
 Final assignment for Phenikaa Web Development course.
+This repo had been archived and is read-only since we have finished the course.
 
 # Project description
 
-We were required to create a clone of a website on the internet. We chose to clone [github](github.com).
+We were required to create a clone of a website on the internet. 
+
+We chose to clone [github](github.com).
 
 # Installation
 
